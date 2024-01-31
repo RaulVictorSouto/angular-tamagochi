@@ -1,0 +1,33 @@
+/* Estilos para telas médias (tablets) */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 80px;
+    margin-bottom: 20px;
+    margin-top: 40px;
+  }
+
+  .tamagotchi-card {
+    width: 80%;
+  }
+
+  .tamagotchi-card img {
+    width: 50%;
+  }
+}
+
+/* Estilos para telas pequenas (smartphones) */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 55px;
+    margin-bottom: 15px;
+    margin-top: 30px;
+  }
+
+  .tamagotchi-card {
+    width: 80%;
+  }
+
+  .tamagotchi-card img {
+    width: 70%;
+  }
+}

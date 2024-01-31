@@ -1,0 +1,9 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+    background: linear-gradient(to right, #88985b, #667f59);
+    font-family: "Pixelify Sans", sans-serif;
+    width: 80%;
+    margin: 0 auto;
+    color: #333030;
+  }
+

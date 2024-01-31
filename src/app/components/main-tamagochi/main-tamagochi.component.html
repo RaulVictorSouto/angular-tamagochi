@@ -1,0 +1,47 @@
+<div class="tamagotchi-container">
+  <div *ngIf="saude !== 0">
+
+      <img [src]="imagemRemota" alt="{{ nome }}" class = "pet">
+    <div class="hub">
+    <div class="dados">
+      <h1>{{ nome }}</h1>
+      <h3>{{especie}}</h3>
+    </div>
+      <div class="status">
+        <p [ngClass]="{'status-baixo': saude < 3}">Saúde: {{ saude }}</p>
+        <p [ngClass]="{'status-baixo': fome < 2}">Nutrição: {{ fome }}</p>
+        <p [ngClass]="{'status-baixo': felicidade < 2}">Felicidade: {{ felicidade }}</p>
+        <p [ngClass]="{'status-baixo': energia < 2}">Energia: {{ energia }}</p>
+
+      </div>
+
+      <div class="botoes">
+        <button (click)="papar()" [ngClass]="{'status-baixo-button': fome === fomeMAX}">Papar</button>
+        <button (click)="brincar()" [ngClass]="{'status-baixo-button': felicidade === felicidadeMAX}">Brincar</button>
+        <button (click)="mimir()" [ngClass]="{'status-baixo-button': energia === energiaMAX}">Mimir</button>
+        <button (click)="darRemedio()" [ngClass]="{'status-baixo-button': saude === saudeMAX}">Dar remédio</button>
+
+        <div class="imageStatus">
+          <img src="./assets/img/icon-saude.png" alt="saúde" *ngIf="saude <= 5">
+          <img src="./assets/img/icon-fome.png" alt="fome" *ngIf="fome <= 3">
+          <img src="./assets/img/icon-felicidade.png" alt="felicidade" *ngIf="felicidade <= 3">
+          <img src="./assets/img/icon-energia.png" alt="energia" *ngIf="energia <= 3">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="gameover" *ngIf="saude === 0">
+    <h1>GAME OVER</h1>
+    <h3>{{nome}} faleceu :(</h3>
+    <p>Tempo: {{ formatarTempo(tempoJogo) }}</p>
+    <button (click)="tentarNovamente()">Tentar Novamente</button>
+
+    <audio autoplay="true">
+      <source src="./assets/music/game-over.mp3" type="audio/mpeg">
+    </audio>
+
+  </div>
+</div>

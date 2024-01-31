@@ -1,0 +1,64 @@
+{
+  "bichos":[
+    {
+      "id": 1,
+      "nome": "Maroon Sundaynight",
+      "especie": "Loba",
+      "saude":15,
+      "fome":18,
+      "felicidade":14,
+      "energia":26,
+      "imagemRemota": "./assets/img/1.png"
+    },
+    {
+      "id": 2,
+      "nome": "Rick Rad Roger",
+      "especie": "Ouriço",
+      "saude":21,
+      "fome":13,
+      "felicidade":22,
+      "energia":11,
+      "imagemRemota": "./assets/img/2.png"
+    },
+    {
+      "id": 3,
+      "nome": "Batata",
+      "especie": "Barata",
+      "saude":8,
+      "fome":4,
+      "felicidade":6,
+      "energia":3,
+      "imagemRemota": "./assets/img/3.png"
+    },
+    {
+      "id": 4,
+      "nome": "Sofia",
+      "especie": "Gata",
+      "saude":19,
+      "fome":11,
+      "felicidade":5,
+      "energia":7,
+      "imagemRemota": "./assets/img/4.png"
+    },
+    {
+      "id": 5,
+      "nome": "Steve",
+      "especie": "Velociraptor",
+      "saude":15,
+      "fome":25,
+      "felicidade":20,
+      "energia":20,
+      "imagemRemota": "./assets/img/5.png"
+    },
+    {
+      "id": 6,
+      "nome": "Robson",
+      "especie": "Panda",
+      "saude":20,
+      "fome":5,
+      "felicidade":15,
+      "energia":20,
+      "imagemRemota": "./assets/img/6.png"
+    }
+  ]
+}

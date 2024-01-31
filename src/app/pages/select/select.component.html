@@ -1,0 +1,11 @@
+<h1>Selecione seu Tamagochi</h1>
+<div class="tamagotchi-card-container">
+  <div *ngFor="let bicho of bichos" (click)="selecionarTamagotchi(bicho)" class="tamagotchi-card">
+    <a (click)="irParaMain(bicho)">
+      <img [src]="bicho.imagemRemota"  alt="{{ bicho.nome }}" (click)="selecionarTamagotchi(bicho)">
+      <h3 (click)="selecionarTamagotchi(bicho)">{{ bicho.nome }}</h3>
+      <p (click)="selecionarTamagotchi(bicho)">{{ bicho.especie }}</p>
+    </a>
+  </div>
+</div>
+

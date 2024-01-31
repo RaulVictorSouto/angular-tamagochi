@@ -1,0 +1,155 @@
+.tamagotchi-container {
+  text-align: center;
+  margin: 20px;
+  margin-top: 30px;
+  padding: 20px;
+  border: 5px solid #333030;
+  justify-content: center;
+  height: 850px;
+}
+
+.pet{
+  width: 45%;
+  height: auto;
+  margin-bottom: 50px;
+  opacity: 0.6;
+  animation: moveDown 2s infinite alternate;
+}
+
+.status {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: left;
+  font-size: 30px;
+  width: 30%;
+}
+
+.status p{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.botoes {
+  display: flex;
+  flex-wrap: wrap;
+  width: 30%;
+}
+
+.botoes button {
+  margin: 5px;
+  width: 45%;
+  font-size: 25px;
+  cursor: pointer;
+  background-color: transparent;
+  border: 3px solid #333030;
+  font-family: "Pixelify Sans", sans-serif;
+  justify-content: flex-end;
+}
+
+.hub{
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  align-content: top;
+  justify-content: center;
+  align-items: center;
+}
+
+.dados{
+  text-align: left;
+  width: 30%;
+}
+
+.dados h1{
+  font-size: 35px;
+  margin-bottom: 0px;
+  font-weight: 700;
+}
+
+.dados h3{
+  font-size: 20px;
+  margin-bottom: 0px;
+  font-weight: 700;
+}
+
+.botoes button:hover{
+  position: relative;
+  top: 2px;
+  border: 3px solid #b3b37e;
+  color: #b3b37e;
+}
+
+.status-baixo{
+  color: #4d5966;
+}
+
+.status-baixo-button {
+  color: #4d5966;
+  border: 3px solid #4d5966;
+}
+
+.gameover{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.gameover h1{
+  font-size: 150px;
+}
+
+.gameover h3{
+  font-size: 70px;
+}
+
+.gameover p{
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.gameover button{
+  margin: 5px;
+  padding: 10px;
+  width: 25%;
+  font-size: 25px;
+  cursor: pointer;
+  background-color: transparent;
+  border: 3px solid #333030;
+  color:#333030;
+  font-family: "Pixelify Sans", sans-serif;
+}
+
+.gameover button:hover{
+  position: relative;
+  top: 2px;
+  border: 3px solid #b3b37e;
+  color: #b3b37e;
+}
+
+@keyframes moveDown {
+  to {
+    transform: translateY(10px);
+  }
+}
+
+.imageStatus {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  height: 30px;
+  width: 92%;
+}
+
+.imageStatus img {
+  width: 10%;
+  height: auto;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+
